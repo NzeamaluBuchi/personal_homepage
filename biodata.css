@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;     
+}
+
+/* ------------------- 
+      Web Font 
+---------------------- */
+@font-face {
+    font-family: 'Opens San';
+    src: url('Fonts/Opens San/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'Opens San';
+    src: url('Fonts/Opens San/OpenSans-italic.ttf');
+}
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('Fonts/static/RobotoSlab-Regular.ttf');
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: 
+      linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+      linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+      linear-gradient(315deg, black 25%, transparent 25%),
+      linear-gradient(45deg, black 25%, transparent 25%);	
+    background-size: 2em 2em;
+    background-color: #232323;
+    color: black;
+}
+
+/*----------------------------
+    Hompage Layout 
+-----------------------------*/
+h1 {
+    font-family: 'Roboto Slab',sans-serif,serif;
+    color: black;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    font-family:'Open San',sans-serif,serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+    justify-content: center;
+    flex: 1;
+    background-color: coral;
+    min-height:70vh;
+    margin-top: 70px;
+    border-radius: 50px;
+}
+
+/*----------------------------
+    Navigation Layout 
+-----------------------------*/
+.primary-nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    background-color: #333;
+    height: 40px;
+    padding: 10px;
+}
+
+.primary-nav a {
+    font-family: 'Open San',sans-serif,serif;
+    color: #f2f2f2;
+    text-decoration: none
+}
+
+.primary-nav a:hover {
+    background-color: coral;
+    padding: 10px;
+    border-radius: 7px;
+}

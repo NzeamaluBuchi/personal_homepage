@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;     
+}
+
+/* ------------------- 
+      Web Font 
+---------------------- */
+@font-face {
+    font-family: 'Opens San';
+    src: url('Fonts/Opens San/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'Opens San';
+    src: url('Fonts/Opens San/OpenSans-italic.ttf');
+}
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('Fonts/static/RobotoSlab-Regular.ttf');
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: 
+      linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+      linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+      linear-gradient(315deg, black 25%, transparent 25%),
+      linear-gradient(45deg, black 25%, transparent 25%);	
+    background-size: 2em 2em;
+    background-color: #232323;
+    color: #fff;
+}
+
+
+/*----------------------------
+    Hompage Layout 
+-----------------------------*/
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    flex: 1;
+}
+
+.initial-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    flex: 1;
+}
+
+img {
+    width: 300px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    border-radius:100%;
+}
+
+.name {
+    font-family: 'Roboto Slab',sans-serif,serif;
+    font-weight: 700;
+    font-size: 55px;
+    letter-spacing: .9px;
+    margin-top: -15px;
+    color: #f2f2f2;
+}
+
+.description {
+    font-family: 'Open San',sans-serif,serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: .75px;
+    font-style: italic;
+}
+
+/*----------------------------
+    Navigation Layout 
+-----------------------------*/
+
+ul {
+    font-family: 'Open San',sans-serif,serif;
+    list-style: none; 
+    font-weight: bold;
+}
+
+.primary-nav a{
+    color: #fff;
+    text-decoration: none;
+    background-color: red;
+    line-height: 1.5;
+    border-radius: 5px 5px 5px 0;
+    padding: 10px;
+}
+
+.primary-nav a:hover {
+    background-color: coral;
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.primary-nav {
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.secondary-nav {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    min-height:45px;
+    padding-right: 50px;    
+}
+
+.secondary-nav a {
+    font-family: 'Open San',sans-serif,serif;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.secondary-nav a:hover{
+    background-color: coral;
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.primary {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+/*----------------------------
+    Footer Layout 
+-----------------------------*/
+.main-footer {
+    background-color: #333;
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.main-footer ul {
+    display: flex;
+    flex-direction: row;
+    line-height: 
+}
+
+.main-footer a {
+    padding-left: 25px;
+    color: #f2f2f2;
+    text-decoration: none;
+    line-height: 1.5
+}
+
+.main-footer a:hover {
+    background-color: coral;
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+ 
+
